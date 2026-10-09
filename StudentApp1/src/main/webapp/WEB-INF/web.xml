@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+    <display-name>StudentApp1</display-name>
+
+    <welcome-file-list>
+        <welcome-file>index.html</welcome-file>
+        <welcome-file>index.jsp</welcome-file>
+        <welcome-file>index.htm</welcome-file>
+        <welcome-file>default.html</welcome-file>
+        <welcome-file>default.jsp</welcome-file>
+        <welcome-file>default.htm</welcome-file>
+    </welcome-file-list>
+
+    <!-- MyFirstServlet -->
+    <servlet>
+        <servlet-name>MyFirstServlet</servlet-name>
+        <servlet-class>com.dest.MyFirstServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>MyFirstServlet</servlet-name>
+        <url-pattern>/currentDate</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+    	<servlet-name>practice</servlet-name>
+    	<servlet-class>com.dest.practice</servlet-class>
+    </servlet>
+    <servlet-mapping>
+    	<servlet-name>practice</servlet-name>
+    	<url-pattern>/practDate</url-pattern>
+    </servlet-mapping>
+
+    <!-- LoginServlet1 -->
+    <servlet>
+        <servlet-name>LoginServlet1</servlet-name>
+        <servlet-class>com.dest.LoginServlet1</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LoginServlet1</servlet-name>
+        <url-pattern>/loginServ</url-pattern>
+    </servlet-mapping>
+
+    <!-- ViewAllStudentsInfo -->
+    <servlet>
+        <servlet-name>ViewAllStudentsInfo</servlet-name>
+        <servlet-class>com.dest.ViewAllStudentsInfo</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ViewAllStudentsInfo</servlet-name>
+        <url-pattern>/viewAllStu</url-pattern>
+    </servlet-mapping>
+
+    <!-- EditServlet -->
+    <servlet>
+        <servlet-name>EditServlet</servlet-name>
+        <servlet-class>com.dest.EditServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>EditServlet</servlet-name>
+        <url-pattern>/editServ</url-pattern>
+    </servlet-mapping>
+
+    <!-- DeleteServlet -->
+    <servlet>
+        <servlet-name>DeleteServlet</servlet-name>
+        <servlet-class>com.dest.DeleteServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DeleteServlet</servlet-name>
+        <url-pattern>/deleteServ</url-pattern>
+    </servlet-mapping>
+
+    <!-- RemoveServlet -->
+    <servlet>
+        <servlet-name>RemoveServlet</servlet-name>
+        <servlet-class>com.dest.RemoveServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RemoveServlet</servlet-name>
+        <url-pattern>/removeServ</url-pattern>
+    </servlet-mapping>
+
+    <!-- UpdateServlet -->
+    <servlet>
+        <servlet-name>UpdateServlet</servlet-name>
+        <servlet-class>com.dest.UpdateServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UpdateServlet</servlet-name>
+        <url-pattern>/updateServ</url-pattern>
+    </servlet-mapping>
+
+    <!-- SearchServlet -->
+    <servlet>
+        <servlet-name>SearchServlet</servlet-name>
+        <servlet-class>com.dest.SearchServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SearchServlet</servlet-name>
+        <url-pattern>/searchServ</url-pattern>
+    </servlet-mapping>
+
+    <!-- RedirectServlet -->
+    <servlet>
+        <servlet-name>RedirectServlet</servlet-name>
+        <servlet-class>com.dest.RedirectServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RedirectServlet</servlet-name>
+        <url-pattern>/redirect</url-pattern>
+    </servlet-mapping>
+
+    <!-- StudentDetailsServlet -->
+    <servlet>
+        <servlet-name>StudentDetailsServlet</servlet-name>
+        <servlet-class>com.dest.StudentDetailsServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>StudentDetailsServlet</servlet-name>
+        <url-pattern>/stuDetails</url-pattern>
+    </servlet-mapping>
+
+    <!-- ForwardServlet -->
+    <servlet>
+        <servlet-name>ForwardServlet</servlet-name>
+        <servlet-class>com.dest.ForwardServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ForwardServlet</servlet-name>
+        <url-pattern>/forwardServ</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+    <servlet-name>IncludeServlet</servlet-name>
+    <servlet-class>com.dest.IncludeServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+    <servlet-name>IncludeServlet</servlet-name>
+    <url-pattern>/incluServ</url-pattern>
+    </servlet-mapping>
+    
+    
+    <servlet>
+		<servlet-name>GenericservletExp</servlet-name>
+		<servlet-class>com.dest.GenericservletExp</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>GenericservletExp</servlet-name>
+		<url-pattern>/Generic</url-pattern>
+	</servlet-mapping>
+
+</web-app>
