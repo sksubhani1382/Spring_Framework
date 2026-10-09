@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+    http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- Define StudentBean with a message property -->
+    <bean id="ref" class="com.dest.dto.StudentBean">
+        <property name="message" value="This is Destination"/>
+    </bean>
+    
+    <bean class="com.dest.dto.InterviewBean" id="iRef">
+	    <property name="IName" value="Java"></property>
+	    <property name="IType" value="offline"></property>
+	    <property name="noOfVac" value="10"></property>
+	    <property name="bean" ref="rRef"></property> 
+    </bean>
+    
+    <bean class="com.dest.dto.RoundBean" id="rRef">
+	    <property name="noOfRounds" value="4"></property>
+	    <property name="rType" value="HR"></property>
+    </bean>
+
+</beans>
